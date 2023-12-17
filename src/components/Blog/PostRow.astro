@@ -1,5 +1,5 @@
 ---
-import { formatDate } from "../../lib/helpers";
+
 
 interface Props {
   title: string;
@@ -23,7 +23,7 @@ const { title, date, url } = Astro.props;
       datetime={date.toISOString()}
       data-date={date.toISOString()}
     >
-      {formatDate(date)}
+      <!-- {formatDate(date)} -->
     </time>
   </a>
 </li>

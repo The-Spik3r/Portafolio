@@ -1,5 +1,4 @@
 ---
-import { formatDate } from "../lib/helpers";
 import type { MarkdownLayoutProps } from "astro";
 import BasicLayout from "./BasicLayout.astro";
 
@@ -14,7 +13,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <BasicLayout
-  title="Gianmarco Cavallo - Blog"
+  title="Nahuel Escalante - Portafolio"
   description="Software developer with strong focus on the user experience animations and micro interactions"
 >
   <main class="mx-auto max-w-3xl w-full h-screen p-8 text-neutral-100">
@@ -26,7 +25,7 @@ const { frontmatter } = Astro.props;
     <div class="my-10">
       <h1 class="text-5xl font-semibold">{frontmatter.title}</h1>
       <div class="flex justify-between pt-4 text-gray-500 text-sm">
-        <p>{formatDate(new Date(frontmatter.pubDate))}</p>
+        <!-- <p>{formatDate(new Date(frontmatter.pubDate))}</p> -->
         <p>{frontmatter.minutesRead}</p>
       </div>
     </div>
